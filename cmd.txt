@@ -1,0 +1,11 @@
+cmd of crud                                                                                ("~6.6.0",=obcervable)
+1) ng new task --routing
+ npm install --save @ng-bootstrap/ng-bootstrap bootstrap font-awesome
+ng generate module product --routing
+ ng generate class product/models/lookup
+ng generate class product/models/product
+ng generate service product/services/product
+ng generate service product/services/lookup
+ ng generate component product\list
+ ng generate component product\add
+ng generate component product/view

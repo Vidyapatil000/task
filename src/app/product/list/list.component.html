@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-sm">
+        <h4>Info</h4>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col sm">
+ <a href="C:\angulartp\task\src\app\product\add\add.component.html" class="float-right fa fa-file fa-lg action-label" routerLink="add" >Add new</a>
+</div>
+
+</div>
+<div class="row">
+    <div class="col-sm" href ="C:\angulartp\task\src\app\product\list\list.component.css">
+        <table class="table table-striped" >
+            <thead>
+              
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">name</th>
+                <th scope="col">email</th>
+                <th scope="col">age</th>
+                <th scope="col">mobile</th>
+                <th scope="col">Address</th>
+                <th scope="col"> </th>
+
+              </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let product of Products | async; index as i">
+              <tr>
+                <td>{{i+1}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.email}}</td>
+                <td>{{product.age.name}}</td>
+                <td>{{product.mobile.name}}</td>
+                <td>{{product.address}}</td>
+                <td><button class='fa fa-eye' (click)='viewProduct(product)'></button></td>
+                <td><button class='delete-label fa fa-trash-o' (click)='deleteProduct(product)' ></button></td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+</div>
