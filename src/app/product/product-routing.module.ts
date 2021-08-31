@@ -6,11 +6,11 @@ import { ListComponent } from './list/list.component';
 import { ViewComponent } from './view/view.component';
 
 const routes: Routes = [{
-  path:'C:\angulartp\task\src\app\product\list',
+  path:'',
   component:ListComponent
 },
 {
-  path:'C:\angulartp\task\src\app\product\add',
+  path:'add',
   component:AddComponent
 },
 {
